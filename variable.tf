@@ -33,5 +33,16 @@ variable "project_owner" {
   default     = "Swathi"
 
 }
+variable "hosted_zone" {
+  type        = string
+  description = "hosted zone"
+  default     = "swathiarjun.online"
+}
 
+variable "hostname" {
+
+  type        = string
+  description = "hostname"
+  default     = "redmi"
+}
 
