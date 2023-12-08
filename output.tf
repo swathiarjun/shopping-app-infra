@@ -2,6 +2,6 @@ output "frontend-url" {
   value = "http://${var.hostname}.${var.hosted_zone}"
 }
 
-output "public_ip" {
-  value = aws_instance.frontend.public_ip
+output "elastic_ip" {
+  value = aws_eip.frontend.public_ip
 }
