@@ -1,5 +1,5 @@
 ---
-name: "Dev infra build"
+name: "Development infra build"
 on:
   push:
     branches:
@@ -29,7 +29,7 @@ jobs:
              --backend-config="bucket=${{secrets.DEV_S3_BUCKET}}"  \
              --backend-config="key=terraform.tfstate" \
              --backend-config="region=${{secrets.DEV_REGION }}"  \
-             --backend-config="access_key=${{ secrets.DEV_ACCESS}}"  \
+             --backend-config="access_key=${{ secrets.DEV_ACCESS_KEY}}"  \
              --backend-config="secret_key=${{ secrets.DEV_SECRET_KEY}}" \
          shell: bash
 
