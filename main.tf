@@ -73,7 +73,7 @@ resource "aws_security_group" "remote-access" {
   }
 
   tags = {
-    Name    = "${var.project_name}-${var.project_env}-remote-access"
+    Name    = "${var.project_name}-${var.project_env}-remote-acceess"
     project = var.project_name
     env     = var.project_env
     
