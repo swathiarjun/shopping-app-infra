@@ -1,5 +1,5 @@
- ---
-name: " Prod infra build"
+---
+name: "Prod infra build"
 on:
   push:
     branches:
